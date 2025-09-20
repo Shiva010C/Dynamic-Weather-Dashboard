@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" id="city-input" placeholder="Search for a city...">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div class="weather-container">
+            <div class="current-weather">
+                <div class="location" id="location">London</div>
+                <div class="main-temp">
+                    <img src="http://openweathermap.org/img/wn/10d@4x.png" alt="weather icon" id="current-weather-icon">
+                    <h1 id="current-temp">24°C</h1>
+                </div>
+                <p class="feels-like" id="feels-like">Feels like 26°C</p>
+                <p class="weather-description" id="weather-description">Sunny</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="hourly-forecast" id="hourly-forecast">
+                    </div>
+
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <p>Wind Speed</p>
+                        <p class="value" id="wind-speed">15 km/h</p>
+                    </div>
+                    <div class="detail-item">
+                        <p>Humidity</p>
+                        <p class="value" id="humidity">60%</p>
+                    </div>
+                    <div class="detail-item">
+                        <p>UV Index</p>
+                        <p class="value" id="uv-index">5</p>
+                    </div>
+                    <div class="detail-item">
+                        <p>Pressure</p>
+                        <p class="value" id="pressure">1012 hPa</p>
+                    </div>
+                    <div class="detail-item">
+                        <p>Sunrise</p>
+                        <p class="value" id="sunrise">6:00 AM</p>
+                    </div>
+                    <div class="detail-item">
+                        <p>Sunset</p>
+                        <p class="value" id="sunset">8:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast-container">
+            <h2>5 Day Forecast</h2>
+            <div class="five-day-forecast" id="five-day-forecast">
+                </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
