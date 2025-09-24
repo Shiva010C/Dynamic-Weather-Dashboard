@@ -202,11 +202,11 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .weather-container {
         flex-direction: column;
     }
-}
+} */
 
 @media (max-width: 768px) {
     .container {
@@ -224,14 +224,13 @@ body {
 }
 
 /* ========================================= */
-/* Mobile Responsive Fixes (540px)      */
+/* Mobile Responsive (540px)      */
 /* ========================================= */
 
 @media (max-width: 540px) {
 
     .container {
         padding: 20px 15px;
-        /* छोटे स्क्रीन पर साइड पैडिंग कम करें */
     }
     .weather-details{
         max-width: 540px;
@@ -254,29 +253,21 @@ body {
         display: none;
     }
 
-    /* 5 Day Forecast को हॉरिजॉन्टल स्क्रॉल वाला बनाएं */
     .five-day-forecast {
         display: flex;
-        /* ग्रिड से फ्लेक्स में बदलें */
         overflow-x: auto;
-        /* हॉरिजॉन्टल स्क्रॉल को सक्षम करें */
         scroll-snap-type: x mandatory;
-        /* स्मूथ स्क्रॉलिंग के लिए */
         padding-bottom: 15px;
-        /* स्क्रॉलबार के लिए जगह */
         gap: 12px;
     }
 
     .day-item {
         flex: 0 0 90px;
-        /* आइटम को सिकुड़ने से रोकें और एक निश्चित चौड़ाई दें */
         scroll-snap-align: start;
     }
 
-    /* डिटेल्स ग्रिड को बेहतर बनाएं */
     .details-grid {
         grid-template-columns: 1fr 1fr;
-        /* हमेशा 2 कॉलम रखें */
         gap: 15px;
     }
 
@@ -293,7 +284,6 @@ body {
         height: 100px;
     }
 
-    /* Chrome/Safari पर स्क्रॉलबार को छिपाने के लिए (Optional) */
     .five-day-forecast::-webkit-scrollbar {
         display: none;
     }

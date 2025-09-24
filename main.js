@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const apiKey = '4872f50d300161d7d0277819ac8cadb3'; // <-- API key
 
-    // HTML Elements
     const locationEl = document.getElementById('location');
     const currentTempEl = document.getElementById('current-temp');
     const feelsLikeEl = document.getElementById('feels-like');
@@ -9,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentIconEl = document.getElementById('current-weather-icon');
     const windSpeedEl = document.getElementById('wind-speed');
     const humidityEl = document.getElementById('humidity');
-    const uvIndexEl = document.getElementById('uv-index'); // UV Index free forecast API में नहीं मिलता
+    const uvIndexEl = document.getElementById('uv-index'); 
     const pressureEl = document.getElementById('pressure');
     const sunriseEl = document.getElementById('sunrise');
     const sunsetEl = document.getElementById('sunset');
